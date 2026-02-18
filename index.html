@@ -29,12 +29,17 @@
             <div class="bmi-block-2">
                 <p class="sur-title-medium">Enter your details below</p>
                 <form>
-                    <input type="radio" id="metric" name="metric-or-imperial" value="metric">
-                    <label for="metric">Metric</label>
-                    <input type="radio" id="imperial" name="metric-or-imperial" value="imperial">
-                    <label for="imperial">Imperial</label> 
-                    <br>
+                    <div class="radio-inputs">
+                        <span>
+                            <input type="radio" id="metric" name="metric-or-imperial" value="metric">
+                            <label class="radio-choice" for="metric">Metric</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="imperial" name="metric-or-imperial" value="imperial">
+                            <label class="radio-choice" for="imperial">Imperial</label> 
 
+                        </span>
+                    </div>
                     <div class="form-inputs">
                         <div class="input-group">
                             <label for="cm">Height</label>
