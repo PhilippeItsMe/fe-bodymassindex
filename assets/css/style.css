@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* -------------------- Primary set-up --------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif;
+    color: var(--grey500);
+}
+
+
+/* -------------------- Colors --------------------*/
+ 
+:root {
+    /*Primary color*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey500: #5E6E85;
+    --grey300 : #ACC1DE;
+   
+    /*Secondary color*/
+    --blue900: #253347;
+    --blue500: #345FF6;
+    --blue300: #B3D3F1;
+    --blue100: #E1E7FE;
+    --gradient1: #D6FCFE;
+    --gradient2: #c2d5f2;
+}
+
+
+/* -------------------- Typography --------------------*/
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2px;;
+    color: var(--blue900);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    color: var(--blue900);
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 130%;
+    color: var(--grey500);
+}
+
+.sur-title-medium {
+    font-size: 0.8rem;
+    font-weight: 600;;
+}
+
+.sur-title-small {
+    font-size: 0.8rem;
+}
+
+.sur-title-extra-small {
+    font-size: 1rem;
+}
+
+
+/* -------------------- Body & Main --------------------*/
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+main {
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* -------------------- Body Mass Index Calculator --------------------*/
+
+#bmic {
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.bmi-block-1 {
+    width: 75%;
+    height: 100%;
+    padding-right: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, var(--gradient1), transparent 0%, var(--gradient2));
+    border-radius: 0 0 2rem 0;
+    position: relative;
+}
+
+.intro-picto {
+    width: 2.5rem;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+}
+
+.bmi-block-2 {
+    width: 50%;
+    max-width: 500px;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.bmi-result-box {
+    background-color: var(--blue500);
+    border-radius: 0 3rem 3rem 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bmi-result-box p,
+.bmi-result-box strong {
+    color: var(--white);
+}
+
+.bmi-result-box div {
+    width: 50%;
+}
+
+.bmi-result {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.form-inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0;
+    /* flex: 1; */
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--blue900);
+}
+
+.input-with-unit {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-unit input {
+    width: 100%;
+    padding: 0.75rem 3rem 0.75rem 0.75rem;
+    border: 1px solid var(--blue300);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: -1.5rem;;
+}
+
+.input-with-unit .unit {
+    position: absolute;
+    right: 0.75rem;
+    color: var(--blue500);
+    font-weight: 600;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+
+
+
+
+
