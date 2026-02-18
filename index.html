@@ -31,7 +31,7 @@
                 <form>
                     <div class="radio-inputs">
                         <span>
-                            <input type="radio" id="metric" name="metric-or-imperial" value="metric">
+                            <input type="radio" id="metric" name="metric-or-imperial" value="metric" checked>
                             <label class="radio-choice" for="metric">Metric</label>
                         </span>
                         <span>
@@ -45,14 +45,14 @@
                             <label for="cm">Height</label>
                             <div class="input-with-unit">
                                 <input type="number" id="cm" name="cm">
-                                <span class="unit">cm</span>
+                                <span class="unit unit-size">cm</span>
                             </div>
                         </div>
                         <div class="input-group">
                             <label for="kg">Weight</label>
                             <div class="input-with-unit">
                                 <input type="number" id="kg" name="kg">
-                                <span class="unit">kg</span>
+                                <span class="unit unit-weight">kg</span>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <p class="bmi-result">23.4</p>
                     </div>
                     <div>
-                        <p>Your BMI suggests you’re a healthy weight. 
+                        <p class="bmi-content">Your BMI suggests you’re a healthy weight. 
                             Your ideal weight is between <strong>63.3kgs - 85.2kgs.</strong>
                         </p>
                     </div>
@@ -116,6 +116,7 @@
 
         <!------------------- Limitations of BMI ------------------->
         <section id="limitations">
+            <img class="right-curve" src="assets/images/pattern-curved-line-right.svg" alt="">
             <div id="box1">
                 <h2>Limitations of BMI</h2>
                 <p>
