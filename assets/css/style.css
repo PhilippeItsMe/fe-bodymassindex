@@ -217,7 +217,6 @@ main {
 /* -------------------- What your BMI result means --------------------*/
 
 /* first section */
-
 #result-meaning {
     display: flex;
     flex-direction: row;
@@ -257,7 +256,6 @@ main {
 }
 
 /* second section */
-
 #result-factors {
     display: flex; 
     flex-direction: row;
@@ -274,8 +272,6 @@ main {
 
 
 /* -------------------- Limitations of BMI --------------------*/
-
-
 
 .mb-1 {
     margin-bottom: 1rem;
@@ -345,9 +341,145 @@ main {
 }
 
 
+/* -------------------- Limitations of BMI --------------------*/
+
+/* Desktop */
+@media screen and (max-width: 1370px) {
+    main {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+
+/* Tablet */
+@media screen and (max-width: 850px) {
+    main {
+        width: 100%;
+    }
+
+    #bmic {
+        height: 40rem;
+        flex-direction: column;
+    }
+
+    .bmi-block-1 {
+        width: 100%;
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .intro-picto {
+        margin-top: 1rem;
+        margin-bottom: 2rem;;
+        position: static;
+    }
+
+    h1 {
+        width: 50%;
+        text-align: center;
+    }
+
+     .bmi-block-1 p {
+        text-align: center;
+        height: 15rem;
+        padding: 0 2rem;
+     }
+
+    .bmi-block-2 {
+        width: 80%;
+        position: relative;
+        left: 0%;
+        top: -25%;
+    }
+
+    #result-meaning {
+        margin-top: 0;
+    }
+
+    .left-curve {
+        display: none;
+        }
+
+    #result-meaning div:nth-of-type(2) {
+        padding: 2rem 2rem;
+
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #result-factors {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 4rem 0;
+    }
+
+    .description-factor {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .description-factor img {
+        margin-right: 1.5rem;
+    }
+
+    #limitations {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .right-curve {
+        display: none;
+    }
+
+    #box1 {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        margin-bottom: 2rem;
+    }
+
+    #box1 h2,
+    #box1 p {
+        text-align: center;
+    }
+
+
+    #box2 {
+        grid-column: 1 / 7;
+        grid-row: 2;
+    }
+    #box3 {
+        grid-column: 7 / 13;
+        grid-row: 2;
+    }
+    #box4 {
+        grid-column: 1 / 7;
+        grid-row: 3;
+    }
+    #box5 {
+        grid-column: 7 / 13;
+        grid-row: 3;
+    }
+    #box6 {
+        grid-column: 4 / 10;
+        grid-row: 4;
+        margin-bottom: 2rem;
+    }
 
 
 
 
 
 
+}
