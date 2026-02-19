@@ -366,12 +366,13 @@ main {
     }
 
     #bmic {
-        height: 40rem;
+        height: 45rem;
         flex-direction: column;
     }
 
     .bmi-block-1 {
         width: 100%;
+        height: 100%;
         padding: 1rem 2rem;
         align-items: center;
         justify-content: start;
@@ -398,7 +399,7 @@ main {
         width: 80%;
         position: relative;
         left: 0%;
-        top: -25%;
+        top: -15%;
     }
 
     #result-meaning {
@@ -454,7 +455,6 @@ main {
         text-align: center;
     }
 
-
     #box2 {
         grid-column: 1 / 7;
         grid-row: 2;
@@ -476,10 +476,92 @@ main {
         grid-row: 4;
         margin-bottom: 2rem;
     }
+}
 
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #bmic {
+        height: 60rem;
+    }
 
+    .bmi-block-1 {
+        flex: 1;
+    }
 
+    .intro-picto {
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;;
+        position: static;
+    }
 
+    h1 {
+        font-size: 1.8rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .bmi-block-2 {
+        height: 28rem;
+        top: -15%;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .bmi-result-box {
+        flex-direction: column;
+        border-radius: 0.5rem;
+    }
+
+    .bmi-result-box div {
+        width: 100%;
+    }
+
+    #result-meaning {
+        flex-direction: column;
+        margin-top: -5rem;
+    }
+
+    #result-meaning > div {
+        width: 100%;
+    }
+
+    #result-factors {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .description-factor {
+        flex-direction: column;
+    }
+
+    #box2 {
+        grid-column: 1 / 13;
+        grid-row: 2;
+    }
+    #box3 {
+        grid-column: 1 / 13;
+        grid-row: 3;
+    }
+    #box4 {
+        grid-column: 1 / 13;
+        grid-row: 4;
+    }
+    #box5 {
+        grid-column: 1 / 13;
+        grid-row: 5;
+    }
+    #box6 {
+        grid-column: 1 / 13;
+        grid-row: 6;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #bmic {
+        height: 64rem;
+    }
 
 
 }
